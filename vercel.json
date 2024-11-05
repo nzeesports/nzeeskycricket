@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "manifest_720.php",
+      "src": "index.php",
       "use": "vercel-php"
     }
   ],
   "routes": [
   {
     "src": "/(.*)",
-    "dest": "/manifest_720.php?get=$1"
+    "dest": "/index.php?get=$1"
   }
 ],
   "regions": ["sin1"]
